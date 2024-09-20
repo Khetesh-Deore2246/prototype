@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="profile.png" alt="Profile Image"  style="width: 50%; align-self: center;">
+            <h2>Gayatri Duse</h2>
+            <p>Volunteer</p>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <h2><a href="#">Dashboard</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">Multi agency</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">Citizens</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">E-Commerce</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">Notification</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">Kumbhtokens</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">Settings</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">Logout</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">FAQ</a></h2>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <input type="text" placeholder="Explore.. " >
+        </header>
+
+        <div class="dashboard">
+            <h1>Dashboard</h1>
+            <div class="card-container">
+                <div class="card multi-agency">
+                    <img src="hands.jpg" alt="Multi Agency" style="width: 100%; align-self: center;">
+                    <h3>Multi Agency</h3>
+                    <p>Ensure seamless communication between different agencies like police, healthcare, volunteers and
+                        event managements.</p>
+                    <button class="emergency-sos"><h2>Emergency SOS</h2></button>
+                </div>
+                <div class="card e-commerce">
+                    <img src="ecom.jpg" alt="E-Commerce" style="width: 100%; align-self: center;">
+                    <h3>E-Commerce</h3>
+                    <p>Support and invest in local artisans products to empower them and build a self-reliant India.</p>
+                    <div class="buttons">
+                        <button><h2>Purchase</h2></button>
+                        <button><h2>Kumbhtokens</h2></button>
+                    </div>
+                </div>
+                <div class="card chatbot">
+                    <img src="chatbot.jpg" alt="Chat Bot" style="width: 90%; align-self: center;">
+                    <h3>Chat Bot</h3>
+                    <p>Chatbot provides real-time guidance and essential information visitors, including locations,
+                        events, facilities, and safety alerts.</p>
+                    <a href="https://mediafiles.botpress.cloud/2e58005b-f64c-4cbc-b8cd-ce069bce8ad0/webchat/bot.html"><button
+                            class="chatbot-start"><h2>Start</h2></button></a>
+
+                </div>
+                
+            </div>
+
+            <div class="for-attendees">
+                <h1>For Attendees</h1>
+                <div class="card multi-agency">
+                    <img src="kumbh1.jpg" alt="Multi Agency" style="width: 90%; align-self: center;">
+                    <h3>Virtual Tour</h3>
+                    <p>Experience Kumbha Mela Virtually</p>
+                    <button class="emergency-sos"><h2>Get Started</h2></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Virtual Tour Modal -->
+    <div class="modal virtual-tour-modal" id="virtual-tour-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Kumbh Mela Virtual Tour</h2>
+            <p>Experience the entire Kumbh Mela festival through this virtual tour.</p>
+            <button class="close-modal">Close</button>
+        </div>
+    </div>
+
+    <!-- Chatbot Modal -->
+    <div class="modal chatbot-modal" id="chatbot-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Chatbot</h2>
+            <div class="chat-window">
+                <p><strong>Bot:</strong> How can I assist you today?</p>
+                <input type="text" placeholder="Type your message..." id="user-input">
+                <button id="send-message">Send</button>
+            </div>
+            <button class="close-modal">Close</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
